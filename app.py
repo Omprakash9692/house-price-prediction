@@ -29,18 +29,18 @@ crime_rate = st.number_input("Crime Rate", value=5.0)
 population_density = st.number_input("Population Density", value=5000)
 
 location = st.selectbox("Location", ["low", "medium", "premium"])
-income_level = st.selectbox("Income Level", ["low", "mid", "high"])
+income_level = st.selectbox("Income Level", ["high", "low", "mid"])
 
 location_map = {
-    "low": 1,
-    "medium": 2,
-    "premium": 3
+    "low": 0,
+    "medium": 1,
+    "premium": 2
 }
 
 income_map = {
-    "low": 1,
-    "mid": 2,
-    "high": 3
+    "low": 0,
+    "mid": 1,
+    "high": 2
 }
 
 if st.button("Predict Price"):
